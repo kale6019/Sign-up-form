@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+@font-face {
+    font-family: norse;
+    src: url(/font/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: designer;
+    src: url(/font/Designer.otf);
+}
+
+/* body {
+    height: 100vh;
+} */
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+      
+}
+
+.image-container {
+    
+    width: 40%;
+    background-image: url(/photos/space.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: designer;
+    padding: 25px;
+}
+
+img {
+    width: 5rem;
+}
+
+
+form {
+    
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.header {
+    
+    font-family: designer, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+h2 {
+    padding: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    min-height: 200px;
+    gap: 20px;
+    padding: 10px;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(254, 254, 254);
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    
+    
+}
+
+input:focus {
+    transition: border-color 0.5s ease;
+    border: 2px solid #5e6061;
+    outline: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.first-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.last-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+.phone-number {
+    display: flex;
+    flex-direction: column;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+}
+.confirm-password {
+    display: flex;
+    flex-direction: column;
+}
