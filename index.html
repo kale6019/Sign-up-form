@@ -24,37 +24,37 @@
             <div class="input-container">
                 <div class="first-name">
                     <label for="first-name">FIRST NAME:</label>
-                    <input type="text" name="first-name" id="first-name">
+                    <input type="text" name="first-name" id="first-name" required>
                 </div>
                 <div class="last-name">
                     <label for="last-name">LAST NAME:</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <input type="text" name="last-name" id="last-name" required>
                 </div>
                 <div class="email">
                     <label for="email">EMAIL:</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div class="phone-number">
                     <label for="phone-number">PHONE NUMBER:</label>
-                    <input type="number" name="phone-number" id="phone-number">
+                    <input type="number" name="phone-number" id="phone-number" required>
                 </div>
                 <div class="password">
                     <label for="password">PASSWORD:</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" minlength="8" required>
                 </div>
                 <div class="confirm-password">
                     <label for="confirm-password">CONFIRM PASSWORD:</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
+                    <input type="password" name="confirm-password" id="confirm-password" minlength="8" required>
                 </div>
-
             </div>
+            <div class="error"></div>
             <div class="create-account">
-                <button>CREATE ACCOUNT</button>
-                <p>ALREADY HAVE AN ACCOUNT? <a href="">LOG IN</a></p>
-                
+                <button class="btn">CREATE ACCOUNT</button>
+                <p>ALREADY HAVE AN ACCOUNT? <a href="">LOG IN</a></p>              
             </div>
         </form>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
